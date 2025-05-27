@@ -262,7 +262,7 @@ export default function ComingSoon() {
               { label: "Hours", value: timeLeft.hours },
               { label: "Minutes", value: timeLeft.minutes },
               { label: "Seconds", value: timeLeft.seconds },
-            ].map((item, index) => (
+            ].map((item) => (
               <motion.div
                 key={item.label}
                 style={{
@@ -316,7 +316,7 @@ export default function ComingSoon() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2, ease: "easeOut" }}
           >
-            {socialLinks.map((social, index) => {
+            {socialLinks.map((social) => {
               const Icon = social.icon;
               return (
                 <motion.a
